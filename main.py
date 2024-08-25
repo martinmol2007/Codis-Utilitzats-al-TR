@@ -8,7 +8,6 @@ def main():
     print(f"\nH(X) = {entropia} bits. Aproximat a {round(entropia)} bits/símbol")
     print(f"Necessitareu aproximadament {len(missatge) * round(entropia)} bits per codificar òptimament '{missatge}'")
 
-    
     encoded_message, huffman_tree, huffman_codes = huffman_encode(missatge)
     print("\nCodificació Huffman per a cada caràcter:")
     for char, code in huffman_codes.items():
